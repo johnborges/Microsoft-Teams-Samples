@@ -464,6 +464,10 @@ jobs:
               name: 'bot-configuration-app'
               version: '6.0.x'
 
+            - project_path: 'samples/bot-configuration-app-auth/csharp/Bot configuration/Bot Configuration.csproj'
+              name: 'bot-configuration-app-auth'
+              version: '6.0.x'
+
             - project_path: 'samples/app-HR-talent/csharp/src/TeamsTalentMgmtAppV6.csproj'
               name: 'app-HR-talent'
               version: '6.0.x'
@@ -488,7 +492,7 @@ jobs:
     strategy:
       matrix:
         include:
-            - project_path: 'samples/app-complete-sample/csharp/template-bot-master-csharp.sln'
+            - project_path: 'samples/app-complete-sample/csharp/AppCompleteSample.sln'
               name: 'app-complete-sample'
 
       fail-fast: false
@@ -1005,6 +1009,10 @@ jobs:
             
             - project_path: 'samples/bot-configuration-app/nodejs'
               name: 'bot-configuration-app'
+              version: '18.x'
+
+            - project_path: 'samples/bot-configuration-app-auth/nodejs'
+              name: 'bot-configuration-app-auth'
               version: '18.x'
 
             - project_path: 'samples/tab-add-in-combined/nodejs'
